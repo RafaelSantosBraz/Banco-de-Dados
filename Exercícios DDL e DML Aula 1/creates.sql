@@ -1,14 +1,14 @@
-create table Aluno
- (
-	 matricula char(5),
-	 nome varchar(50) not null,
-	 endereco varchar(60),
-	 bairro varchar(40),
-	 dt_nascimento date,
-	 sexo char(1),
-	 constraint pk_aluno primary key (matricula)
- );
- 
+CREATE TABLE Aluno
+(
+	matricula char(5),
+	nome varchar(50) not null,
+	endereco varchar(60),
+	bairro varchar(40),
+	dt_nascimento date,
+	sexo char(1),
+	constraint pk_aluno primary key (matricula)
+);
+
 create table Curso
 (
 	cod_curso int,
@@ -46,3 +46,5 @@ create table Grade_Conceito
 	nota_final real,
 	constraint pk_grade_conceito primary key (conceito)
 );
+
+commit;

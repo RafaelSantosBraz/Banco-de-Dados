@@ -1,0 +1,1 @@
+DELETE FROM Aluno WHERE bairro = 'Centro' AND (cidade = 'Londrina' OR cidade = 'Bandeirantes');
