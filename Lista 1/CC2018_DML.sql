@@ -8,11 +8,11 @@ VALUES
 
 INSERT INTO Autores
 VALUES
-    (3, 'Jonilson Escriba', 'abcdef');
+    (3, 'Friedrich Nietzsche', 'abcdef');
 
 INSERT INTO Autores
 VALUES
-    (4, 'Enriquerson Rodrigues', 'abbcd');
+    (4, 'Dante Alighieri', 'abbcd');
 
 INSERT INTO Autores
 VALUES
@@ -65,3 +65,19 @@ VALUES
 INSERT INTO Livros
 VALUES
     (1, '85-359-0644-4', 'O Cosmo de Einstein', 2005, 'primeira', 1, 1);
+
+INSERT INTO Livros
+VALUES
+    (2, '978-85-325-30001-1', 'Harry Potter e as Relíquias da Morte', 2015, 'primeira', 2, 4);
+
+INSERT INTO Livros
+VALUES
+    (3, '9788575563335', 'Assim Falava Zaratustra', 2004, 'quarta', 3, 2);
+
+INSERT INTO Livros
+VALUES
+    (4, '978-85-7326-424-1', 'A Divina Comédia', 2014, 'segunda', 4, 3);
+
+INSERT INTO Livros
+VALUES
+    (5, '9788575563335', 'Assim Falava Zaratustra', 2004, 'quarta', 3, 2);
