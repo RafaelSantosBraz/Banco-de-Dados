@@ -1,10 +1,10 @@
 INSERT INTO Autores
 VALUES
-    (1, 'Rafael Braz', 'abcd');
+    (1, 'J. K. Rowling', 'aaaa');
 
 INSERT INTO Autores
 VALUES
-    (2, 'Adalberto Soares', 'aabb');
+    (2, 'Michio Kaku', 'aabb');
 
 INSERT INTO Autores
 VALUES
@@ -20,11 +20,11 @@ VALUES
 
 INSERT INTO Editoras
 VALUES
-    (1, 'Companhia Das Letras', 'Rua Estados Unidos', '86360000');
+    (1, 'Companhia Das Letras', 'Rua Bandeira Paulista, 702, cj. 32', '04532002');
 
 INSERT INTO Editoras
 VALUES
-    (2, 'Ediouro', 'Rua José Caciola', '17123000');
+    (2, 'Ediouro', 'RUA CANDELÁRIA, 60 - 7º ANDAR - CENTRO, RIO DE JANEIRO - RJ', '20091020');
 
 INSERT INTO Editoras
 VALUES
@@ -40,23 +40,27 @@ VALUES
 
 INSERT INTO PalavrasChave
 VALUES
-    ('ficção');
+    ('Ficção');
 
 INSERT INTO PalavrasChave
 VALUES
-    ('romance');
+    ('Romance');
 
 INSERT INTO PalavrasChave
 VALUES
-    ('fantástica');
+    ('Fantástica');
 
 INSERT INTO PalavrasChave
 VALUES
-    ('clássica');
+    ('Clássica');
 
 INSERT INTO PalavrasChave
 VALUES
-    ('juvenil');
+    ('Juvenil');
+
+INSERT INTO PalavrasChave
+VALUES
+    ('Científica');
 
 INSERT INTO Livros
 VALUES
