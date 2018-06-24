@@ -16,7 +16,7 @@ VALUES
 
 INSERT INTO Autores
 VALUES
-    (5, 'Pablito Hermanito', 'aacd');
+    (5, 'Ransom Riggs', 'aacd');
 
 INSERT INTO Editoras
 VALUES
@@ -80,4 +80,105 @@ VALUES
 
 INSERT INTO Livros
 VALUES
-    (5, '9788575563335', 'Assim Falava Zaratustra', 2004, 'quarta', 3, 2);
+    (5, '978-85-8057-688-7', 'O Lar da Srta. Peregrine para Crianças Peculiares', 2017, 'primeira', 5, 5);
+
+INSERT INTO LivrosAutores
+VALUES
+    (1, 2);
+
+INSERT INTO LivrosAutores
+VALUES
+    (2, 1);
+
+INSERT INTO LivrosAutores
+VALUES
+    (3, 3);
+
+INSERT INTO LivrosAutores
+VALUES
+    (4, 4);
+
+INSERT INTO LivrosAutores
+VALUES
+    (5, 5);
+
+INSERT INTO LivrosPalavras
+VALUES
+    ('Científica', 1);
+
+INSERT INTO LivrosPalavras
+VALUES
+    ('Fantástica', 2);
+
+INSERT INTO LivrosPalavras
+VALUES
+    ('Clássica', 3);
+
+INSERT INTO LivrosPalavras
+VALUES
+    ('Clássica', 4);
+
+INSERT INTO LivrosPalavras
+VALUES
+    ('Juvenil', 5);
+
+INSERT INTO Exemplares
+VALUES
+    (1,'2018-06-21', 1);
+
+INSERT INTO Exemplares
+VALUES
+    (2,'1998-08-21', 2);
+
+INSERT INTO Exemplares
+VALUES
+    (3,'2018-06-21', 3);
+
+INSERT INTO Exemplares
+VALUES
+    (4,'2018-06-23', 4);
+
+INSERT INTO Exemplares
+VALUES
+    (5,'2005-12-10', 5);
+
+INSERT INTO Leitor
+VALUES
+    (1, 'Rafael dos Santos Braz', 'Rua Irineu - você não sabe nem eu', '86360000', 'Bandeirantes');
+
+INSERT INTO Leitor
+VALUES
+    (2, 'José Henrique Ricordi Cruz', 'Rua José Caciola', '17123000', 'Bauru');
+
+INSERT INTO Leitor
+VALUES
+    (3, 'Bianca L. V.', 'Rodovia BR-369 Km 54, Vila Maria', '59092450', 'Londrina');
+
+INSERT INTO Leitor
+VALUES
+    (4, 'Irineu', 'Rua Estados Unidos', '12345678', 'Apucarana');
+
+INSERT INTO Leitor
+VALUES
+    (5, 'Gabriel dos Santos C. B.', 'Rua Carlos Gomes', '17120120', 'Agudos');
+
+INSERT INTO Requisicoes (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
+VALUES
+    (1, '2018-06-25 12:52:00+03', '2018-07-02 12:52:00+03', 1, 1);
+
+INSERT INTO Requisicoes (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
+VALUES
+    (2, '2017-01-01 00:00:00+03', '2017-01-08 00:00:00+03', 1, 3);
+
+INSERT INTO Requisicoes (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
+VALUES
+    (3, '2018-06-25 13:00:00+03', '2018-07-02 13:00:00+03', 2, 2);
+
+INSERT INTO Requisicoes (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
+VALUES
+    (4, '2009-09-09 13:07:00+03', '2009-09-16 13:07:00+03', 4, 5);
+
+INSERT INTO Requisicoes (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
+VALUES
+    (5, '2015-12-01 13:07:00+03', '2015-12-08 13:07:00+03', 2, 1);
+
