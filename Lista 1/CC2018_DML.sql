@@ -124,23 +124,23 @@ VALUES
 
 INSERT INTO Exemplares
 VALUES
-    (1,'2018-06-21', 1);
+    (1, '2018-06-21', 1);
 
 INSERT INTO Exemplares
 VALUES
-    (2,'1998-08-21', 2);
+    (2, '1998-08-21', 2);
 
 INSERT INTO Exemplares
 VALUES
-    (3,'2018-06-21', 3);
+    (3, '2018-06-21', 3);
 
 INSERT INTO Exemplares
 VALUES
-    (4,'2018-06-23', 4);
+    (4, '2018-06-23', 4);
 
 INSERT INTO Exemplares
 VALUES
-    (5,'2005-12-10', 5);
+    (5, '2005-12-10', 5);
 
 INSERT INTO Leitor
 VALUES
@@ -162,23 +162,74 @@ INSERT INTO Leitor
 VALUES
     (5, 'Gabriel dos Santos C. B.', 'Rua Carlos Gomes', '17120120', 'Agudos');
 
-INSERT INTO Requisicoes (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
+INSERT INTO Requisicoes
+    (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
 VALUES
     (1, '2018-06-25 12:52:00+03', '2018-07-02 12:52:00+03', 1, 1);
 
-INSERT INTO Requisicoes (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
+INSERT INTO Requisicoes
+    (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
 VALUES
     (2, '2017-01-01 00:00:00+03', '2017-01-08 00:00:00+03', 1, 3);
 
-INSERT INTO Requisicoes (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
+INSERT INTO Requisicoes
+    (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
 VALUES
     (3, '2018-06-25 13:00:00+03', '2018-07-02 13:00:00+03', 2, 2);
 
-INSERT INTO Requisicoes (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
+INSERT INTO Requisicoes
+    (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
 VALUES
     (4, '2009-09-09 13:07:00+03', '2009-09-16 13:07:00+03', 4, 5);
 
-INSERT INTO Requisicoes (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
+INSERT INTO Requisicoes
+    (IdRequisicao, DataRequisicao, DataPrevEntrega, IdExemplar, IdLeitor)
 VALUES
     (5, '2015-12-01 13:07:00+03', '2015-12-08 13:07:00+03', 2, 1);
 
+UPDATE Requisicoes
+SET DataRealEntrega = '2018-07-02 09:30:00+03', ValorMulta = 0.0
+WHERE IdRequisicao = 1;
+
+UPDATE Requisicoes
+SET DataRealEntrega = '2017-01-06 04:20:00+03', ValorMulta = 0.0
+WHERE IdRequisicao = 2;
+
+UPDATE Requisicoes
+SET DataRealEntrega = '2018-07-05 13:00:00+03', ValorMulta = 4.0
+WHERE IdRequisicao = 3;
+
+UPDATE Requisicoes
+SET DataRealEntrega = '2009-09-30 09:40:00+03', ValorMulta = 15.0
+WHERE IdRequisicao = 4;
+
+UPDATE Requisicoes
+SET DataRealEntrega = '2015-12-08 13:07:00+03', ValorMulta = 0.0
+WHERE IdRequisicao = 5;
+
+DELETE FROM Requisicoes 
+WHERE IdRequisicao = 1 OR IdRequisicao = 5;
+
+DELETE FROM Exemplares 
+WHERE IdExemplar = 3;
+
+DELETE FROM LivrosPalavras 
+WHERE IdLivro = 3;
+
+DELETE FROM LivrosAutores 
+WHERE IdLivro = 3;
+
+DELETE FROM Livros 
+WHERE IdLivro = 3;
+
+DELETE FROM PalavrasChave 
+WHERE IdPalavra = 'Romance';
+
+DELETE FROM LivrosPalavras 
+WHERE IdLivro = 3;
+
+DELETE FROM Editoras 
+WHERE IdEditora = 2;
+
+DELETE FROM Autores 
+WHERE IdAutor = 3;
