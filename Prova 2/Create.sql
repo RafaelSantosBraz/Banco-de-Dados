@@ -54,3 +54,13 @@ CREATE TABLE Turmas
     CONSTRAINT fk_cursos FOREIGN KEY (cod_curso) REFERENCES Cursos(cod_curso),
     CONSTRAINT fk_funcionarios FOREIGN key (cod_func) REFERENCES Funcionarios(cod_func)
 );
+
+CREATE TABLE Alunos_Turmas
+(
+    cod_aluno INTEGER,
+    cod_turma INTEGER,
+    numero_inscr INTEGER,
+    CONSTRAINT pk_alunos_turmas PRIMARY KEY (cod_aluno, cod_turma),
+    CONSTRAINT fk_alunos FOREIGN key (cod_aluno) REFERENCES Alunos(cod_aluno),
+    CONSTRAINT fk_turmas FOREIGN key (cod_turma) REFERENCES Turmas(cod_turma)
+);
